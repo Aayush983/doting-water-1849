@@ -72,6 +72,13 @@
         height: 700px;
         /* border: 1px solid red; */
         display: flex;
+        background-image:url(https://assets.loseit.com/website/home/Wave.png), linear-gradient(90deg, rgba(245, 128, 30, 1) 0, rgba(246, 146, 29, 1) 100%);
+        background-size: 100% 500px;
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    padding: 50px 0px;
+    width: 100%;
+
     }
     #container>div:nth-child(1){
         width: 20%;
@@ -161,7 +168,177 @@ margin-left:24%;
 .cont>div>p{
     text-align: center;
 }
-    </style>
+
+/* feature-section */
+
+
+#feature{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #F1F1F1;
+    
+}
+#feature>div{
+    width:30% ;
+    height: 250px;
+    /* border: 1px solid red; */
+   margin-top: 50px;
+   background: #FFFFFF;
+}
+#feature>div>img{
+    width: 30%;
+    margin-left: 33%;
+}
+#feature>div>h3{
+    text-align: center;
+    color: #183962;
+}
+#feature>div>p{
+    text-align: center;
+    font-size: 18px;
+    color: #808284;
+}
+
+/* ticker */
+
+#party{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid blue; */
+    background-color: #FFFFFF;
+   
+}
+#party>div{
+    height: 450px;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+#party>div>img{
+    width: 13%;
+    margin-left:45%;
+    margin-bottom: -30px;
+}
+#party>div>h1{
+    font-size: 100px;
+    color: #FF9400;
+    text-align: center;
+    margin-bottom: -15px;
+
+}
+#party>div>h2{
+    text-align: center;
+    color: #455555;
+   
+
+}
+hr{
+    width: 3%;
+    height: 8px;
+    background-color: #FF9400;
+}
+.head{
+    width: 100%;
+    height: 50px;
+     /* border: 2px solid blueviolet; */
+     color: #183962;
+     text-align: center;
+     font-size: 20px;
+     background-color: #FFFFFF;
+}
+.head1{
+    width: 100%;
+    height: 150px;
+     /* border: 2px solid blueviolet; */
+     background-color: #FFFFFF;
+     display: flex;
+     justify-content: center;
+     gap: 80px;
+}
+.head1>div{
+    width:15% ;
+    height: 150px;
+    /* border: 1px solid red; */
+   background: #FFFFFF;
+}
+.head1>div>img{
+    width: 100%;
+}
+.head1>div>:nth-child(1){
+    margin-top: 20%;
+}
+
+
+/* Advice */
+
+#advice{
+    width: 100%;
+    height: 560px;
+    background-color:#183962;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+   
+}
+
+
+#h2{
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid white; */
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+
+}
+
+#box{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.ad1{
+height: 310px;
+width: 510px;
+/* border: 2px solid white; */
+}
+.ad1>img{
+    height: 200px;
+    width: 200px;
+    margin-left: 30%;
+}
+.ad1>p{
+    text-align: center;
+    color: #FF9400;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 10px auto;
+}
+.ad1 span{
+    margin-left: 30%;
+    font-size: .8em;
+    color: #fff;   
+}
+
+.button{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #FF9400;
+    margin: 20px 20px;
+    text-align: center;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #F1F1F1;
+    margin-left: 43%;
+}
+ </style>
 </head>
 <body>
     <div id="ban">
@@ -237,5 +414,78 @@ margin-left:24%;
         </div>
                     
       </div>
+
+      <!-- feature-section -->
+
+      <div id="feature">
+         <div>
+            <img src="	https://assets.loseit.com/website/home/Features_WaterTracking.svg" alt="Water-glass">
+            <h3>Water Traking</h3>
+            <p>Track your water intake to make sure you're getting the recommended amount daily.</p>
+         </div>
+        <div>
+            <img src="https://assets.loseit.com/website/home/Features_Macros.svg" alt="macros">
+            <h3>Macro Tracking</h3>
+            <p>Set personalized macronutrient goals to ensure you’re<br> getting enough protein, carbs, and more.</p>
+         
+
+            </div>
+        </div>
+    
+        <!-- ticker -->
+
+        <div id="party">
+           <div>
+              <img src="	https://assets.loseit.com/website/home/Ticker_Celebratory.svg" alt="Error">
+              <h1>121,505,296</h1>
+              <h2>POUND LOST</h2>
+              <hr>
+          </div>
+          </div>
+        <div class="head">
+            <h3>AS SEEN ON</h3>
+         </div>
+         <div class="head1">
+            <div>
+                <img src="https://assets.loseit.com/website/home/Feature_TodayShow.png" alt="today show">
+            </div>
+            <div>
+                <img src="https://assets.loseit.com/website/home/Feature_People.png" alt="People magazine">
+            </div>
+            <div>
+                <img src="https://assets.loseit.com/website/home/Feature_GoodMorningAmerica.png" alt="good morning america">
+            </div>
+            <div>
+                <img src="https://assets.loseit.com/website/home/Feature_WomensHealth.png" alt="women's health">
+            </div>
+
+         </div>
+
+
+         <!-- Advice-section -->
+
+         <div id="advice">
+            <div id="h2">
+                 Advice from Successful Members
+                </div>
+            <div id="box">
+                <div class="ad1">
+                <img src="https://assets.loseit.com/website/home/Advice_Carla.png" alt="Error">
+                <P>Track every single bite you take. You need to know <br>how you’re doing before dinner. 
+                    If you don’t, things can<br> get away from you fast."</P>
+                    <span>- Carla, 65 lbs lost without giving up pizza.</span>
+                </div>
+                <div class="ad1">
+                <img src="https://assets.loseit.com/website/home/Advice_Alex.png" alt="Error">
+                <p>Everyday is a battle, and you have to make the choice <br>each morning to fight for your health and wellness"</p>
+                <span>- Alex, lost 85 lbs for his wedding.</span>
+                </div>
+           
+            </div>
+      
+            <button class="button"><a href="">Share Your Story</a></button>
+      
+         </div>
+         
 </body>
 </html>
