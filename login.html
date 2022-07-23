@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #log{
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid red; */
+        }
+        #he{
+            width: 200px;
+            height: 70px;
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-top: 60px;
+            margin-bottom: 20px;
+        }
+        #he>img{
+            width: 80%;
+        }
+        .lgin{
+            width: 380px;
+            height: 228px;
+            /* border: 2px solid blue; */
+            margin-top: 25px;
+            margin: auto;
+            display: grid;
+        }
+       
+        #ab{
+            width: 370px;
+            height: 199px;
+            /* border: 1px solid black; */
+            margin: auto;
+        }
+        button{
+            width: 370px;
+            height: 35px;
+            color: white;
+            border-radius: 5px;
+            background-color: #ff9400;
+            margin-top: 20px;
+        }
+        #ab p{
+            text-align: center;
+        }
+        a{
+            color: #ff9400;
+            text-decoration: none;
+        }
+        #ton1{
+            width: 370px;
+            height: 35px;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+        }
+       input{
+        display: block;
+        width:370px;
+        height: 33px;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div id="log">
+          <div id="he">
+            <img src="https://my.loseit.com/LoseIt_Logo_FullColor.png" alt="Logo">
+          </div>
+          <div class="lgin">
+            
+               
+
+             <div id="d1">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                <input id="email" type="email">
+                </div>
+                <div id="d2">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input id="pass" type="password">
+                    </div>
+            
+            
+            <button onclick="loginFun()">LOGIN</button></div>
+            
+            
+            <div id="ab">
+                
+                 <p>Don't have an account?<a href="signup.html">create new now!</a></p>
+                 <hr>
+                 <button id="ton1">Sign in with Apple</button>
+                 <p>Sign In with Facebook is no longer supported</p>
+                  
+                  <h3>© Copyright 2008-2022 FitNow, Inc. All Rights Reserved
+                    Privacy | Terms of Service</h3>
+            </div>
+          </div>
+</body>
+</html>
+<script>
+     function loginFun(){
+    let data=[];
+    let dataFrmLs=JSON.parse(localStorage.getItem("userData"))||[];
+    let email=document.querySelector("#email").value;
+    let pass=document.querySelector("#pass").value;
+    dataFrmLs.forEach(function(elem){
+        if(email==elem.uEmail && pass==elem.uPassword){
+            alert("login successfull");
+            window.location.href = "index.html";
+            data.push(elem);
+            localStorage.setItem("loginData",JSON.stringify(data));
+        }else{
+            alert("Invalid Email and Password");
+        }
+    })
+
+}
+</script>
