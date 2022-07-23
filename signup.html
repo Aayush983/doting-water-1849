@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        #sign{
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid red; */
+            background-image: url(https://assets.loseit.com/website/onboarding/Wave.svg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-size: 100% auto;
+            background-position: bottom center;
+            padding-bottom: 100px;
+           
+          
+        }
+        /* logo  */
+        .sig1{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid blue; */
+        }
+        .sig1>img{
+            width: 250px;
+        }
+
+     /* header */
+
+        .sign2{
+            width: 500px;
+            height: 96px;
+            /* border: 1px solid orange; */
+            margin-left: 15%;
+        }
+        .sign2 h1{
+            color: #f7941d;
+         font-size: 32px;
+          font-weight: 700;
+         text-align: center;
+         font-family: Avenir, Helvetica, Arial, sans-serif;
+        }
+        /* marketing */
+        .marketing{
+            width: 380px;
+            height: 230px;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 50px;
+            gap: 20px;
+            display: grid;
+        }
+       
+    
+        button{
+            width: 370px;
+            height: 35px;
+            color: white;
+            border-radius: 5px;
+            background-color: #183962;
+        }
+        #p2{
+            text-align: center;
+            font-size:20px;
+            padding-top: 30px;
+        }
+        a{
+            color: #183962;
+            text-decoration: none;
+        }
+      
+       input{
+        display: block;
+        width:370px;
+        height: 33px;
+        border-radius: 5px;
+       }
+       p{
+        font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div id="sign">
+       <div class="sig1">
+        <img src= "https://assets.loseit.com/website/corporate/LoseIt_Logo_NoTagline_FullColor.svg" alt="Error">
+       </div>
+
+       <div class="sign2">
+         <h1>
+            Take the first step towards
+            a healthier you with Lose It!
+         </h1>
+       </div>
+       <div class="marketing">
+      
+        
+                <div id="d1">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+                    <input id="email" type="email" placeholder="Enter Email Address">
+                   </div>
+                    <div id="d1">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <input id="mbl" type="Phone_Number" placeholder="Enter PhoneNumber">
+                    </div>
+                    <div id="d2">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input id="pass" type="password" placeholder="Enter New Password">
+                    </div>
+                 
+                
+                <button >CONTINUE</button></div>
+               
+            
+             <p id="p2" style="text-align: center">Have an account ? <a href="login.html">Login</a> </p>
+             <p style="text-align: center; color: black;">By signing up, you agree to our
+                 Terms and <br>Conditions & Privacy Policy</p>
+       </div>
+    
+</body>
+</html>
+<script>
+     document.querySelector("button").addEventListener("click",function(){
+        myFunction()
+        window.location.href="login.html";
+     });
+    
+    let data=[];
+    
+    function myFunction(){
+        let email=document.querySelector("#email").value;
+        let Phone=document.querySelector("#mbl").value
+        let password=document.querySelector("#pass").value;
+        
+        let obj={};
+        obj.uEmail=email;
+        obj.uPhone=Phone;
+        obj.uPassword=password;
+        data.push(obj);
+        localStorage.setItem("userData",JSON.stringify(data));
+        alert("Signed up successfully ");
+        alert("Now Please login");
+       
+       
+    }
+</script>
