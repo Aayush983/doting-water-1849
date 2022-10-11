@@ -10,4 +10,4 @@ Profiles, Social sharing etc.
 
 Tools-HTML,CSS,JAVASCRIPT
 
-Deployed Link:(https://scintillating-clafoutis-dbade0.netlify.app/)
+Deployed Link:[(https://scintillating-clafoutis-dbade0.netlify.app/)]
